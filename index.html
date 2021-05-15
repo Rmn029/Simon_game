@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simon Game</title>
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body>
+    <h1>Welcome to Simon Game</h1>
+    <div class="container">
+      
+        <div class="row center1">
+          <div class="col">
+          <h3>Level</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn1 colorcol unclickable" data-tile="red"></button>
+                <button type="button" class="btn2 colorcol unclickable" data-tile="yellow"></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn3 colorcol unclickable" data-tile="green"></button>
+                <button type="button" class="btn4 colorcol unclickable" data-tile="blue"></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row center2">
+          <div class="col">
+          <button type="button" class="btn btn-primary startbtn">Start</button>
+          <span class="info js-info hidden"></span>
+        </div>
+        </div>
+      </div>
+      <div class="hidden">
+        <audio
+          src="sounds_red.mp3"
+          data-sound="red">
+        </audio>
+        <audio
+          src="sounds_yellow.mp3"
+          data-sound="yellow">
+        </audio>
+        <audio
+          src="sounds_green.mp3"
+          data-sound="green">
+        </audio>
+        <audio
+          src="sounds_blue.mp3"
+          data-sound="blue">
+        </audio>
+      </div>
+    <script src="main.js"></script>
+    <div id="footer">Made by @Raman Kumar</div>
+  </body>
+</html>
